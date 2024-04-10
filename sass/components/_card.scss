@@ -157,7 +157,10 @@
     font-weight: 100;
   }
 
-  @include respond(tab-port) {
+  // 修改成 平板手機 沒有hover會採用 以下樣式
+  @media only screen and (max-width: 56.25em),
+    only screen and (hover: none) 
+  {
     // Functionality
     height: auto;
     border-radius: 3px;
